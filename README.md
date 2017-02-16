@@ -1,3 +1,3 @@
 # Microservices using Spring Cloud on Docker/AWS
 
-All examples are mostly from Spring Microservices, 2016, Rajesh.
+Most examples are from Spring Microservices, 2016, Rajesh RV.
