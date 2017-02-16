@@ -1,4 +1,17 @@
-# springbootactuator example
+# build
 * mvnw clean install
 * java -jar target\springbootactuator-0.0.1-SNAPSHOT.jar
-* start http://localhost:8080/
+
+# controller endpoint
+* http://localhost:8080/
+
+# spring boot actuator endpoints
+* http://localhost:8080/env
+* http://localhost:8080/autoconfig
+* http://localhost:8080/metrics
+* http://localhost:8080/health
+* http://localhost:8080/info
+* http://localhost:8080/mappings
+* http://localhost:8080/beans
+* http://localhost:8080/dump
+* http://localhost:8080/trace
