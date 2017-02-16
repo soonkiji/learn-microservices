@@ -1,13 +1,14 @@
-# spring boot (hateoas)
+# build and run
 * mvnw clean install
-* java -jar target\springhateoas-0.0.1-SNAPSHOT.jar
+* java -jar <artifact-jar>
 
 # controller endpoint
-* http://localhost:8080/
 * http://localhost:8080/greeting
-* http://localhost:8080/greeting?name=World
 
-# spring boot actuator endpoints
+# hal endpoint
+* http://localhost:8080/
+
+# actuator endpoints
 * http://localhost:8080/env
 * http://localhost:8080/autoconfig
 * http://localhost:8080/metrics

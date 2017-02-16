@@ -14,11 +14,6 @@ import static org.springframework.hateoas.mvc.ControllerLinkBuilder.methodOn;
 
 @RestController
 class GreetingController {
-    @RequestMapping("/")
-    Greet greet() {
-        return new Greet("Hello World!");
-    }
-
     @RequestMapping("/greeting")
     @ResponseBody
     public HttpEntity<Greet> greeting(@RequestParam(value = "name", required = false, defaultValue = "HATEOAS") String name) {
@@ -30,9 +25,6 @@ class GreetingController {
 
 class Greet extends ResourceSupport {
     private String message;
-
-    public Greet() {
-    }
 
     public Greet(String message) {
         this.message = message;

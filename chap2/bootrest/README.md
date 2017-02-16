@@ -1,11 +1,11 @@
-# spring boot (web, actuator)
+# build and run
 * mvnw clean install
-* java -jar target\springbootactuator-0.0.1-SNAPSHOT.jar
+* java -jar <artifact-jar>
 
 # controller endpoint
 * http://localhost:8080/
 
-# spring boot actuator endpoints
+# actuator endpoints
 * http://localhost:8080/env
 * http://localhost:8080/autoconfig
 * http://localhost:8080/metrics
