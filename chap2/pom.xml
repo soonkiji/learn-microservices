@@ -9,5 +9,6 @@
     <modules>
         <module>bootrest</module>
         <module>boothateoas</module>
+        <module>bootadvanced</module>
     </modules>
 </project>
