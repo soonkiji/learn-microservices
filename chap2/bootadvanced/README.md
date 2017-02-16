@@ -2,16 +2,10 @@
 * mvnw clean install
 * java -jar <artifact-jar>
 
-# controller endpoint
-* http://localhost:8080/
+# dev endpoint
+* java -jar -Dspring.profiles.active=development target\bootadvanced-0.0.1-SNAPSHOT.jar
+* http://localhost:9090
 
-# actuator endpoints
-* http://localhost:8080/env
-* http://localhost:8080/autoconfig
-* http://localhost:8080/metrics
-* http://localhost:8080/health
-* http://localhost:8080/info
-* http://localhost:8080/mappings
-* http://localhost:8080/beans
-* http://localhost:8080/dump
-* http://localhost:8080/trace
+# prod endpoint
+* java -jar -Dspring.profiles.active=development target\bootadvanced-0.0.1-SNAPSHOT.jar
+* http://localhost:8080
