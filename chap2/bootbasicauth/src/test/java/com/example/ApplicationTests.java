@@ -26,7 +26,7 @@ public class ApplicationTests {
 
     @Test
     public void testBasicAuth() {
-        String cred = "user:user123";
+        String cred = "guest:guest123";
         HttpHeaders headers = new HttpHeaders();
         headers.add("Authorization", "Basic " + new String(Base64.encode(cred.getBytes())));
         HttpEntity<String> request = new HttpEntity<String>(headers);

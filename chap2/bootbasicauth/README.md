@@ -8,8 +8,8 @@
 * java -jar <artifact-jar>
 
 # controller endpoint
-* http://localhost:8080/ (user / user123)
-* curl --user user:user123 http://localhost:8080
+* http://localhost:8080/ (guest / guest123)
+* curl --user guest:guest123 http://localhost:8080
 
 # actuator endpoints
 * http://localhost:8080/env

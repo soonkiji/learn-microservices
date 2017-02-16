@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 class GreetingController {
+    // TODO: Use WebMvcConfigurer to enable global CORS
     @CrossOrigin
     @RequestMapping("/")
     Greet greet() {
