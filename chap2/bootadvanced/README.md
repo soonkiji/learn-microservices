@@ -1,3 +1,9 @@
+# demo
+* mvc
+* actuator
+* added two profiles
+* removed tomcat, added undertow
+
 # build and run
 * mvnw clean install
 * java -jar <artifact-jar>
@@ -7,5 +13,5 @@
 * http://localhost:9090
 
 # prod endpoint
-* java -jar -Dspring.profiles.active=development target\bootadvanced-0.0.1-SNAPSHOT.jar
+* java -jar -Dspring.profiles.active=production target\bootadvanced-0.0.1-SNAPSHOT.jar
 * http://localhost:8080

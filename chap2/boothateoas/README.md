@@ -1,3 +1,8 @@
+# content
+* mvc
+* actuator
+* hal browser
+
 # build and run
 * mvnw clean install
 * java -jar <artifact-jar>

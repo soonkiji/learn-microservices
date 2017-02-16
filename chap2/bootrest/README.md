@@ -1,3 +1,7 @@
+# content
+* mvc
+* actuator
+
 # build and run
 * mvnw clean install
 * java -jar <artifact-jar>
