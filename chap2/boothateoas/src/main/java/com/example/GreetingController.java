@@ -1,4 +1,4 @@
-package com.example;
+package com.demo;
 
 import org.springframework.hateoas.ResourceSupport;
 import org.springframework.http.HttpEntity;
