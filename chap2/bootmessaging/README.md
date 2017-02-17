@@ -1,6 +1,10 @@
 # content
 * mvc
 * actuator
+* rabbitmq
+
+# rabbitmq docker
+* docker run -d --name rabbitmq --restart=always -p 5672:5672 -e RABBITMQ_DEFAULT_USER=guest -e RABBITMQ_DEFAULT_PASS=guest rabbitmq
 
 # build and run
 * mvnw clean install
