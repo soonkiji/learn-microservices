@@ -29,30 +29,6 @@ class Customer {
         this.name = name;
         this.email = email;
     }
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
 }
 
 @RepositoryRestResource
@@ -71,6 +47,7 @@ public class Application {
         return (evt) -> {
             repo.save(new Customer("Harry", "harry@example.com"));
             repo.save(new Customer("Sally", "sally@example.com"));
+            repo.save(new Customer("Tayaee", "tayaee@example.com"));
         };
     }
 }
