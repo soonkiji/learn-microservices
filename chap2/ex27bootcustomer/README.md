@@ -13,3 +13,5 @@
 * http://localhost:8080/customers/search
 * http://localhost:8080/customers/search/findByName{?name}
 * http://localhost:8080/profile/customers
+* http://localhost:8080/customers?size=2&page=1&sort=name
+* http://localhost:8080/customers/search/findByName?name=Harry
