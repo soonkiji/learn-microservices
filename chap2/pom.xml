@@ -14,5 +14,6 @@
         <module>ex25bootoauth2</module>
         <module>ex26bootmessaging</module>
         <module>ex27bootcustomer</module>
+        <module>ex28bootcustomernotification</module>
     </modules>
 </project>
