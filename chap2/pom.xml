@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.example</groupId>
     <artifactId>chap2</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>0.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>chap2</name>
     <modules>
@@ -15,5 +15,6 @@
         <module>ex26bootmessaging</module>
         <module>ex27bootcustomer</module>
         <module>ex28bootcustomernotification</module>
+        <module>ex29actuatorcustomhealth</module>
     </modules>
 </project>
