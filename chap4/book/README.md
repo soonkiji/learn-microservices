@@ -3,8 +3,8 @@
 * actuator
 
 # build and run
-* mvnw clean install
-* java -jar [artifact.jar]
+* mvn -DskipTests clean install
+* java -jar target\book-0.0.1-SNAPSHOT.jar
 
 # controller endpoint
 * http://localhost:8080/

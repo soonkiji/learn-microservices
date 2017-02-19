@@ -6,7 +6,7 @@
 * hal-browser
 
 # build and run
-* mvn clean install
+* mvn -DskipTests clean install
 * java -jar target\fares-0.0.1-SNAPSHOT.jar
 
 # hal browser
