@@ -7,7 +7,7 @@
 
 # build and run
 * mvn clean install
-* java -jar [artifact.jar]
+* java -jar target\fares-0.0.1-SNAPSHOT.jar
 
 # hal browser
 * http://localhost:8080
