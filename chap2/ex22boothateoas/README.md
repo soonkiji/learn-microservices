@@ -5,7 +5,7 @@
 
 # build and run
 * mvnw clean install
-* java -jar <artifact-jar>
+* java -jar [artifact.jar]
 
 # controller endpoint
 * http://localhost:8080/greeting
