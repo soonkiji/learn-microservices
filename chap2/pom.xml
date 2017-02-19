@@ -16,5 +16,6 @@
         <module>ex27bootcustomer</module>
         <module>ex28bootcustomernotification</module>
         <module>ex29actuatorcustomhealth</module>
+        <module>ex2Aswagger</module>
     </modules>
 </project>
