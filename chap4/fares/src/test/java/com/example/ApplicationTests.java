@@ -1,19 +1,21 @@
 package com.example;
 
-import org.junit.Assert;
+import com.example.myapp.fares.entity.Fare;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.web.client.RestTemplate;
 
+import static junit.framework.TestCase.assertEquals;
+
 @RunWith(SpringRunner.class)
 @SpringBootTest
 public class ApplicationTests {
     @Test
-    public void testGreet() {
+    public void testFare() {
         RestTemplate restTemplate = new RestTemplate();
-        Greet greet = restTemplate.getForObject("http://localhost:8080", Greet.class);
-        Assert.assertEquals("Hello World!", greet.getMessage());
+        Fare fare = restTemplate.getForObject("http://localhost:8080/fares/1", Fare.class);
+        assertEquals("101", fare.getFare());
     }
 }

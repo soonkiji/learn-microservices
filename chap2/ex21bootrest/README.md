@@ -1,6 +1,7 @@
 # content
 * mvc
 * actuator
+* docker
 
 # build and run
 * mvnw clean install
