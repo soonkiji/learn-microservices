@@ -31,7 +31,7 @@ public class BookingService {
     private BookingRepository bookingRepository;
 
     @Autowired
-    SearchQueueSender searchQueueSender;
+    MessageSender messageSender;
 
     public long book(BookingRecord bookingRecord) {
         String me = "book()";
@@ -64,7 +64,7 @@ public class BookingService {
         bookingDetails.put("FLIGHT_NUMBER", bookingRecord.getFlightNumber());
         bookingDetails.put("FLIGHT_DATE", bookingRecord.getFlightDate());
         bookingDetails.put("NEW_INVENTORY", inventory.getBookableInventory());
-        searchQueueSender.send(bookingDetails);
+        messageSender.send(bookingDetails);
         return id;
     }
 

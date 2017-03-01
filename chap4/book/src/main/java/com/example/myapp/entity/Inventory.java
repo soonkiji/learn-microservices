@@ -64,6 +64,14 @@ public class Inventory {
     public int getBookableInventory() {
         return available - 5;
     }
+    @Override
+    public boolean equals(Object obj) {
+        return org.apache.commons.lang3.builder.EqualsBuilder.reflectionEquals(this, obj);
+    }
+    @Override
+    public int hashCode() {
+        return org.apache.commons.lang3.builder.HashCodeBuilder.reflectionHashCode(this);
+    }
 
     @Override
     public String toString() {

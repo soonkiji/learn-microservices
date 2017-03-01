@@ -7,16 +7,18 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Component;
 
 @Component
-public class SearchQueueSender {
+public class MessageSender {
+    public static final String SEARCH_QUEUE_NAME = "SearchQ";
+
     @Autowired
     RabbitMessagingTemplate template;
 
     @Bean
     Queue queue() {
-        return new Queue(SearchQueueReceiver.QUEUE, false);
+        return new Queue(SEARCH_QUEUE_NAME, false);
     }
 
     public void send(Object message) {
-        template.convertAndSend(SearchQueueReceiver.QUEUE, message);
+        template.convertAndSend(SEARCH_QUEUE_NAME, message);
     }
 }

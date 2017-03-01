@@ -38,14 +38,40 @@ public class Application implements CommandLineRunner {
         inventoryRepository.save(new Inventory("BF104", "22-JAN-16", 10));
         inventoryRepository.save(new Inventory("BF105", "22-JAN-16", 10));
         inventoryRepository.save(new Inventory("BF106", "22-JAN-16", 10));
-        BookingRecord bookingRecord = new BookingRecord("BF101", "NYC", "SFO", "22-JAN-16", new Date(), "101");
-        Set<Passenger> passengers = new HashSet<>();
-        passengers.add(new Passenger("John", "Doe", "M", bookingRecord));
-        bookingRecord.setPassengers(passengers);
-        System.out.println(me + " Booking " + bookingRecord);
-        Long id = bookingService.book(bookingRecord);
-        System.out.println(me + " Booked ID " + id);
-        BookingRecord booked = bookingService.getBooking(id);
-        System.out.println(me + " booked record " + booked);
+        {
+            BookingRecord bookingRecord = new BookingRecord("BF101", "NYC", "SFO", "22-JAN-16", new Date(), "$100.99");
+            Set<Passenger> passengers = new HashSet<>();
+            passengers.add(new Passenger("John", "Doe", "M", bookingRecord));
+            bookingRecord.setPassengers(passengers);
+            System.out.println(me + " Booking " + bookingRecord);
+            Long id = bookingService.book(bookingRecord);
+            System.out.println(me + " Booked ID " + id);
+            BookingRecord booked = bookingService.getBooking(id);
+            System.out.println(me + " booked record " + booked);
+        }
+        /*-
+        {
+            BookingRecord bookingRecord = new BookingRecord("BF101", "NYC", "SFO", "22-JAN-16", new Date(), "$110.99");
+            Set<Passenger> passengers = new HashSet<>();
+            passengers.add(new Passenger("John", "Doe", "M", bookingRecord));
+            bookingRecord.setPassengers(passengers);
+            System.out.println(me + " Booking " + bookingRecord);
+            Long id = bookingService.book(bookingRecord);
+            System.out.println(me + " Booked ID " + id);
+            BookingRecord booked = bookingService.getBooking(id);
+            System.out.println(me + " booked record " + booked);
+        }
+        {
+            BookingRecord bookingRecord = new BookingRecord("BF101", "NYC", "SFO", "22-JAN-16", new Date(), "$120.99");
+            Set<Passenger> passengers = new HashSet<>();
+            passengers.add(new Passenger("John", "Doe", "M", bookingRecord));
+            bookingRecord.setPassengers(passengers);
+            System.out.println(me + " Booking " + bookingRecord);
+            Long id = bookingService.book(bookingRecord);
+            System.out.println(me + " Booked ID " + id);
+            BookingRecord booked = bookingService.getBooking(id);
+            System.out.println(me + " booked record " + booked);
+        }
+        */
     }
 }
