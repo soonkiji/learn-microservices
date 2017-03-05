@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 import java.util.Map;
 
 @Component
-public class InventoryUpdater {
+public class MessageReceiver {
     @Autowired
     private SearchService searchService;
 

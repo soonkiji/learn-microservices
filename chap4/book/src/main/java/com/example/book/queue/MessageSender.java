@@ -1,4 +1,4 @@
-package com.example.book.service;
+package com.example.book.queue;
 
 import org.springframework.amqp.core.Queue;
 import org.springframework.amqp.rabbit.core.RabbitMessagingTemplate;

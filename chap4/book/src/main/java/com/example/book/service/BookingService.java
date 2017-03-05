@@ -5,6 +5,7 @@ import com.example.book.entity.Fare;
 import com.example.book.entity.Inventory;
 import com.example.book.entity.Passenger;
 import com.example.book.exception.BookingException;
+import com.example.book.queue.MessageSender;
 import com.example.book.repository.BookingRepository;
 import com.example.book.repository.InventoryRepository;
 import org.springframework.beans.factory.annotation.Autowired;
