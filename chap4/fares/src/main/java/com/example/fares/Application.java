@@ -1,7 +1,7 @@
-package com.example.myapp.fares;
+package com.example.fares;
 
-import com.example.myapp.fares.entity.Fare;
-import com.example.myapp.fares.repository.FaresRepository;
+import com.example.fares.entity.Fare;
+import com.example.fares.repository.FaresRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;

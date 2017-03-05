@@ -1,4 +1,4 @@
-package com.example.myapp.fares.entity;
+package com.example.fares.entity;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

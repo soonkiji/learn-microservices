@@ -1,6 +1,6 @@
-package com.example;
+package com.example.fares;
 
-import com.example.myapp.fares.entity.Fare;
+import com.example.fares.entity.Fare;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;

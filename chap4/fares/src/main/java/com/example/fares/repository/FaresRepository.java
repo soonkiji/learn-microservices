@@ -1,6 +1,6 @@
-package com.example.myapp.fares.repository;
+package com.example.fares.repository;
 
-import com.example.myapp.fares.entity.Fare;
+import com.example.fares.entity.Fare;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.repository.query.Param;
 

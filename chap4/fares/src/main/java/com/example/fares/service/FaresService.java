@@ -1,7 +1,7 @@
-package com.example.myapp.fares.service;
+package com.example.fares.service;
 
-import com.example.myapp.fares.entity.Fare;
-import com.example.myapp.fares.repository.FaresRepository;
+import com.example.fares.entity.Fare;
+import com.example.fares.repository.FaresRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 

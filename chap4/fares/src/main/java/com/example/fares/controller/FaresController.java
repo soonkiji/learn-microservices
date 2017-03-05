@@ -1,7 +1,7 @@
-package com.example.myapp.fares.controller;
+package com.example.fares.controller;
 
-import com.example.myapp.fares.entity.Fare;
-import com.example.myapp.fares.service.FaresService;
+import com.example.fares.entity.Fare;
+import com.example.fares.service.FaresService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMapping;
