@@ -1,4 +1,4 @@
-package com.example.myapp.entity;
+package com.example.book.entity;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

@@ -1,7 +1,7 @@
-package com.example.myapp.controller;
+package com.example.book.controller;
 
-import com.example.myapp.entity.BookingRecord;
-import com.example.myapp.service.BookingService;
+import com.example.book.entity.BookingRecord;
+import com.example.book.service.BookingService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

@@ -1,10 +1,10 @@
-package com.example.myapp;
+package com.example.book;
 
-import com.example.myapp.entity.BookingRecord;
-import com.example.myapp.entity.Inventory;
-import com.example.myapp.entity.Passenger;
-import com.example.myapp.repository.InventoryRepository;
-import com.example.myapp.service.BookingService;
+import com.example.book.entity.BookingRecord;
+import com.example.book.entity.Inventory;
+import com.example.book.entity.Passenger;
+import com.example.book.repository.InventoryRepository;
+import com.example.book.service.BookingService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
