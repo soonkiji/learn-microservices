@@ -1,8 +1,9 @@
-package com.example.service.SearchService;
+package com.example.search.service;
 
-import com.example.entity.Flight;
-import com.example.model.SearchQuery;
-import com.example.repository.FlightRepository;
+import com.example.search.entity.Flight;
+import com.example.search.entity.Inventory;
+import com.example.search.model.SearchQuery;
+import com.example.search.repository.FlightRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -21,12 +22,18 @@ public class SearchService {
         List<Flight> flights = flightRepository.findByOriginAndDestinationAndFlightDate(origin, destination, flightDate);
         List<Flight> result = new ArrayList<>();
         for (Flight flight : flights) {
-            // flight.getFares();
             int inv = flight.getInventory().getCount();
             if (inv > 0) {
                 result.add(flight);
             }
         }
         return result;
+    }
+
+    public void updateInventory(String flightNumber, String flightDate, int newInventory) {
+        Flight flight = flightRepository.findByFlightNumberAndFlightDate(flightNumber, flightDate);
+        Inventory inv = flight.getInventory();
+        inv.setCount(newInventory);
+        flightRepository.save(flight);
     }
 }

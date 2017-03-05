@@ -1,4 +1,4 @@
-package com.example.model;
+package com.example.search.model;
 
 public class SearchQuery {
     String origin;

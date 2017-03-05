@@ -1,9 +1,9 @@
-package com.example;
+package com.example.search;
 
-import com.example.entity.Fares;
-import com.example.entity.Flight;
-import com.example.entity.Inventory;
-import com.example.repository.FlightRepository;
+import com.example.search.entity.Fares;
+import com.example.search.entity.Flight;
+import com.example.search.entity.Inventory;
+import com.example.search.repository.FlightRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;

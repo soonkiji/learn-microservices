@@ -1,8 +1,8 @@
-package com.example.controller;
+package com.example.search.controller;
 
-import com.example.entity.Flight;
-import com.example.model.SearchQuery;
-import com.example.service.SearchService.SearchService;
+import com.example.search.entity.Flight;
+import com.example.search.model.SearchQuery;
+import com.example.search.service.SearchService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
