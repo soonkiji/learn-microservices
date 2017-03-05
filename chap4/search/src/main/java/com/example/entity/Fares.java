@@ -3,7 +3,7 @@ package com.example.entity;
 import javax.persistence.*;
 
 @Entity
-public class Fare {
+public class Fares {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "fare_id")
@@ -11,13 +11,13 @@ public class Fare {
     String fare;
     String currency;
 
-    public Fare(String fare, String currency) {
+    public Fares(String fare, String currency) {
         super();
         this.fare = fare;
         this.currency = currency;
     }
 
-    public Fare() {
+    public Fares() {
         super();
     }
 

@@ -1,6 +1,8 @@
 # search
 * mvc
 * actuator
+* swagger
+* /search/get
 
 # build and run
 * mvn -DskipTests clean install
@@ -19,3 +21,6 @@
 * http://localhost:8080/beans
 * http://localhost:8080/dump
 * http://localhost:8080/trace
+
+# search/get
+* 
