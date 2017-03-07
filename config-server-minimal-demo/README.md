@@ -1,5 +1,5 @@
 # spring boot config server
-$ cd /d %userprofile%
+* cd /d %userprofile%
 * mkdir config-repo
 * cd config-repo
 * git init .
