@@ -1,4 +1,4 @@
-# spring boot config server
+# setup
 * cd /d %userprofile%
 * mkdir config-repo
 * cd config-repo
@@ -10,11 +10,13 @@
 # config-server
 * cd config-server
 * mvn spring-boot:run
-* curl http://localhost:8888/search/default
-* curl http://localhost:8888/search/dev
-* curl http://localhost:8888/refresh -d {} -X POST
 
 # search
 * cd search
 * mvn spring-boot:run
 * curl http://localhost:8060/search/
+
+# others
+* curl http://localhost:8888/search/default
+* curl http://localhost:8888/search/dev
+* curl http://localhost:8888/refresh -d {} -X POST
