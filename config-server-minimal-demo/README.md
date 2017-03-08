@@ -8,12 +8,12 @@
 * git commit -m "Added sample search.properties"
 
 # config-server
-* cd config-server
+* cd config-server  // on port 8888
 * mvn spring-boot:run
 
 # search
 * cd search
-* mvn spring-boot:run
+* mvn spring-boot:run  // on port 8090
 * curl http://localhost:8060/search/
 
 # others
