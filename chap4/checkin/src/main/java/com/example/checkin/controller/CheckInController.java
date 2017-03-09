@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/checkin")
 public class CheckInController {
 
-    @RequestMapping(value = "/get/{id}", method = RequestMethod.GET)
+    @RequestMapping(value = "/{id}", method = RequestMethod.GET)
     CheckInRecord get(
             @PathVariable
             @ApiParam(value = "id", example = "1")
@@ -17,7 +17,7 @@ public class CheckInController {
         return new CheckInRecord();
     }
 
-    @RequestMapping(value = "/create", method = RequestMethod.POST)
+    @RequestMapping(value = "", method = RequestMethod.POST)
     long checkIn(@RequestBody CheckInRecord checkIn) {
         return 0;
     }
