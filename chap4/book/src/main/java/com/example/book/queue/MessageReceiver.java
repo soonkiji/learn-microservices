@@ -10,9 +10,12 @@ public class MessageReceiver {
     @Autowired
     private BookingService bookingService;
 
+/*
     @RabbitListener(queues = "CheckInQ")
     public void processMessage(long bookingId) {
         String me = "processMessage()";
         System.out.println(me + " Updating booking status with CHECKED_IN [" + bookingId + "]");
+        System.out.println(bookingService);
     }
+*/
 }
