@@ -1,17 +1,13 @@
-package com.example.book.entity;
+package com.example.website.dto;
 
-import org.apache.commons.lang3.builder.ToStringStyle;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
-import javax.persistence.*;
 import java.util.Date;
 import java.util.Set;
 
-@Entity
 public class BookingRecord {
     public static final String BOOKING_CONFIRMED = "BOOKING_CONFIRMED";
 
-    @Id
-    @GeneratedValue
     Long id;
     String flightNumber;
     String origin;
@@ -21,18 +17,13 @@ public class BookingRecord {
     String fare;
     String status;
 
-    @OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL, mappedBy = "bookingRecord")
+    @JsonIgnore
     Set<Passenger> passengers;
 
     public BookingRecord() {
     }
 
-    public BookingRecord(String flightNumber,
-                         String origin,
-                         String destination,
-                         String flightDate,
-                         Date bookingDate,
-                         String fare) {
+    public BookingRecord(String flightNumber, String origin, String destination, String flightDate, Date bookingDate, String fare) {
         this.flightNumber = flightNumber;
         this.origin = origin;
         this.destination = destination;
@@ -113,14 +104,17 @@ public class BookingRecord {
         this.passengers = passengers;
     }
 
+/*
     @Override
     public String toString() {
-        return (new org.apache.commons.lang3.builder.ReflectionToStringBuilder(this, ToStringStyle.MULTI_LINE_STYLE) {
+        return (new org.apache.commons.lang3.builder.ReflectionToStringBuilder(this,
+                org.apache.commons.lang3.builder.ToStringStyle.SHORT_PREFIX_STYLE) {
             protected boolean accept(java.lang.reflect.Field f) {
                 return super.accept(f)
                         && !java.util.Collection.class.isAssignableFrom(f.getType())
-                        && !f.getName().startsWith("x");
+                        && !f.getName().startsWith("pass");
             }
         }).toString();
     }
+*/
 }

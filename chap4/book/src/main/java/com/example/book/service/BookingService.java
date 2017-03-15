@@ -37,6 +37,9 @@ public class BookingService {
     public long book(BookingRecord bookingRecord) {
         String me = "book()";
         System.out.println(me + " bookingRecord from client: " + bookingRecord);
+        if (bookingRecord.getPassengers() == null) {
+            throw new BookingException("No passenger available.");
+        }
 
         String url = String.format("%s/get?flightNumber=%s&flightDate=%s", FareURL, bookingRecord.getFlightNumber(), bookingRecord.getFlightDate());
         System.out.println(me + " Connecting to " + url);
@@ -44,6 +47,9 @@ public class BookingService {
         System.out.println(me + " fare from fares microservice: " + fare);
 
         Inventory inventory = inventoryRepository.findByFlightNumberAndFlightDate(bookingRecord.getFlightNumber(), bookingRecord.getFlightDate());
+        System.out.println(me + " inv: " + inventory);
+        System.out.println(me + " bookingRecord: " + bookingRecord);
+        System.out.println(me + " bookingRecord.getPassengers(): " + bookingRecord.getPassengers());
         if (!inventory.isAvailable(bookingRecord.getPassengers().size())) {
             throw new BookingException("No more seats available");
         }

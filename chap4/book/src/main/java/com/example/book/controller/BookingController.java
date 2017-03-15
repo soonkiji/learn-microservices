@@ -14,8 +14,11 @@ public class BookingController {
     private BookingService bookingService;
 
     @RequestMapping(value = "/create", method = RequestMethod.POST)
-    long book(@RequestBody BookingRecord record) {
-        return bookingService.book(record);
+    long book(@RequestBody BookingRecord bookingRecord) {
+        System.out.println("예약 정보: " + bookingRecord);
+        long bookingId = bookingService.book(bookingRecord);
+        System.out.println("예약 ID: " + bookingId);
+        return bookingId;
     }
 
     @RequestMapping(value = "/get/{id}", method = RequestMethod.GET)
