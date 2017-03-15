@@ -18,7 +18,7 @@ public class BookingController {
         return bookingService.book(record);
     }
 
-    @RequestMapping("/get/{id}")
+    @RequestMapping(value = "/get/{id}", method = RequestMethod.GET)
     BookingRecord getBooking(@PathVariable long id) {
         return bookingService.getBooking(id);
     }
