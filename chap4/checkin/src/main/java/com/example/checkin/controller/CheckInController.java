@@ -1,6 +1,6 @@
 package com.example.checkin.controller;
 
-import com.example.checkin.schema.CheckInRecord;
+import com.example.checkin.dto.CheckInRecord;
 import com.example.checkin.service.CheckInService;
 import io.swagger.annotations.ApiParam;
 import org.springframework.beans.BeanUtils;
@@ -20,10 +20,10 @@ public class CheckInController {
             @PathVariable
             @ApiParam(value = "id", example = "1")
             long id) {
-        com.example.checkin.entity.CheckInRecord entity = checkInService.get(id);
-        com.example.checkin.schema.CheckInRecord response = new CheckInRecord();
-        BeanUtils.copyProperties(entity, response);
-        return response;
+        com.example.checkin.entity.CheckInRecord checkInEntity = checkInService.get(id);
+        com.example.checkin.dto.CheckInRecord checkInDto = new CheckInRecord();
+        BeanUtils.copyProperties(checkInEntity, checkInDto);
+        return checkInDto;
     }
 
     @RequestMapping(value = "", method = RequestMethod.POST)

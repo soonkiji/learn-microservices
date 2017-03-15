@@ -1,4 +1,4 @@
-package com.example.checkin.schema;
+package com.example.checkin.dto;
 
 import java.util.Date;
 
